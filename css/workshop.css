@@ -192,3 +192,11 @@
 .vid figcaption { margin-top: 12px; font-size: .95rem; color: var(--muted); }
 .vid figcaption strong { display: block; color: var(--navy); font-family: var(--head); font-size: 1.05rem; }
 @media (max-width: 760px) { .vgrid.two { grid-template-columns: 1fr; } }
+
+/* ===== סרטון תדמית (אחד לכל סדנה) ===== */
+.promo .vid { margin-inline: auto; max-width: 960px; }
+.promo .vgrid { justify-items: center; }
+.vid-tr { margin-top: 10px; font-size: .95rem; color: var(--muted); }
+.vid-tr summary { cursor: pointer; font-weight: 700; color: var(--navy); width: max-content; }
+.vid-tr p, .vid-tr ul { margin-top: 8px; }
+.vid-tr ul { list-style: disc; padding-inline-start: 22px; }
