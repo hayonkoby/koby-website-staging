@@ -9,7 +9,7 @@
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Rubik:wght@500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/home.css">
 </head>
@@ -92,41 +92,44 @@
 <main id="main">
 <!-- ================= Hero ================= -->
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow">סדנאות · אימון · ליווי</div>
-      <h1>מזיזים אנשים, עסקים וארגונים <em>קדימה</em></h1>
-      <p class="lead">סדנאות מעשיות וליווי אישי שנותנים כלים, בהירות ותוצאות: בין אם אתה בעל עסק, מנהל, או מחפש את הצעד הבא שלך.</p>
-      <div class="hero-cta">
-        <a class="btn btn-sun" href="#contact">לשיחת היכרות</a>
-        <a class="btn btn-ghost" href="#workshops">לראות את הסדנאות</a>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">סדנאות · אימון · ליווי</div>
+        <h1>מזיזים אנשים, עסקים וארגונים <em>קדימה</em></h1>
+        <p class="lead">סדנאות מעשיות וליווי אישי שנותנים כלים, בהירות ותוצאות: בין אם אתה בעל עסק, מנהל, או מחפש את הצעד הבא שלך.</p>
+        <div class="hero-cta">
+          <a class="btn btn-sun" href="#contact">לשיחת היכרות</a>
+          <a class="btn btn-ghost" href="#workshops">לראות את הסדנאות</a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <img class="portrait" src="images/koby.jpg" alt="קובי חיון" width="360" height="360">
+        <span class="badge b1"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-award"/></svg>15+ שנות אימון</span>
+        <span class="badge b2"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg>23,000+ עוקבים</span>
+        <span class="badge b3"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-globe"/></svg>זום ופרונטלי</span>
       </div>
     </div>
-    <div class="portrait-wrap">
-      <img class="portrait" src="images/koby.jpg" alt="קובי חיון" width="380" height="475">
-    </div>
-  </div>
 
-  <!-- שלוש כניסות לפי קהל -->
-  <div class="wrap">
-    <div class="ledger" id="who">
-      <a class="led" href="coaching/personal-coaching.html">
-        <span class="num">01</span>
-        <h2>אני פרטי</h2>
+    <!-- שלוש כניסות לפי קהל -->
+    <div class="audiences" id="who">
+      <a class="aud a1" href="coaching/personal-coaching.html">
+        <span class="tile"><svg class="ic lg" aria-hidden="true" focusable="false"><use href="#i-user"/></svg></span>
+        <div class="who">אני פרטי</div>
         <p>רוצה להתקדם בחיים, בקריירה ובהגשמה האישית.</p>
-        <span class="go">אימון אישי ←</span>
+        <span class="go">אימון אישי</span>
       </a>
-      <a class="led" href="#ws-business">
-        <span class="num">02</span>
-        <h2>יש לי עסק</h2>
+      <a class="aud a2" href="#ws-business">
+        <span class="tile"><svg class="ic lg" aria-hidden="true" focusable="false"><use href="#i-briefcase"/></svg></span>
+        <div class="who">יש לי עסק</div>
         <p>רוצה לצמוח, להשיג לקוחות ולבנות עסק יציב.</p>
-        <span class="go">סדנאות ואימון עסקי ←</span>
+        <span class="go">סדנאות ואימון עסקי</span>
       </a>
-      <a class="led" href="#ws-orgs">
-        <span class="num">03</span>
-        <h2>אני מייצג ארגון</h2>
+      <a class="aud a3" href="#ws-orgs">
+        <span class="tile"><svg class="ic lg" aria-hidden="true" focusable="false"><use href="#i-building"/></svg></span>
+        <div class="who">אני מייצג ארגון</div>
         <p>מחפש סדנה או ליווי לצוות, למנהלים ולארגון.</p>
-        <span class="go">סדנאות וליווי לארגונים ←</span>
+        <span class="go">סדנאות וליווי לארגונים</span>
       </a>
     </div>
   </div>
@@ -135,11 +138,9 @@
 <!-- ================= סדנאות ================= -->
 <section id="workshops">
   <div class="wrap">
-    <div class="ws-head">
-      <div>
-        <div class="eyebrow">סדנאות ותהליכים</div>
-        <h2>מה רוצים ללמוד?</h2>
-      </div>
+    <div class="sec-head center">
+      <div class="eyebrow">סדנאות ותהליכים</div>
+      <h2>מה רוצים ללמוד?</h2>
       <p>סדנאות מעשיות לפי קהל. בחרו קטגוריה ולחצו על הסדנה לפרטים.</p>
     </div>
 
@@ -151,136 +152,163 @@
 
     <div class="tabpanel" id="ws-business" role="tabpanel" aria-labelledby="tab-biz">
       <span class="panel-h">סדנאות לבעלי עסקים</span>
-      <div class="panel-grid">
-        <a class="feature" href="workshops/building-a-business.html">
-          <span class="f-label">סדנאות לבעלי עסקים</span>
-          <span class="f-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-rocket"/></svg></span>
-          <h3>בונים עסק</h3>
-          <p>ליווי עסקי קבוצתי לשלושה חודשים: חזון, מיינדסט, תוכנית שיווק והתנהלות פיננסית.</p>
-          <span class="f-go">לפרטים והרשמה ←</span>
+      <div class="cards-grid">
+        <a class="wcard t1" href="workshops/linkedin-for-business.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></span></div>
+          <div class="body">
+            <h3>לינקדאין לעסקים</h3>
+            <p>פרופיל, קשרים, תוכן ופניות עסקיות</p>
+            <div class="meta"><span class="chip">זום · 2 מפגשים</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
         </a>
-        <div class="rows-list">
-          <a class="rowitem" href="workshops/linkedin-for-business.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></span>
-            <span><b>לינקדאין לעסקים</b><em>פרופיל, קשרים, תוכן ופניות עסקיות</em></span>
-            <span class="ri-chip">זום · 2 מפגשים</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/ai-chatgpt-workshop.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-sparkle"/></svg></span>
-            <span><b>סבא ג'פטו לעסקים</b><em>AI ו-ChatGPT כשיטת עבודה: מודל AI8</em></span>
-            <span class="ri-chip">זום · 2.5 שעות</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/claude-code-for-business.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-code"/></svg></span>
-            <span><b>קלוד קוד לעסקים</b><em>עוזר AI שעובד על הקבצים שלכם</em></span>
-            <span class="ri-chip">זום · 2 מפגשים</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/ai-foundations.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-chip"/></svg></span>
-            <span><b>יסודות הבינה המלאכותית</b><em>להבין, לשאול נכון ולבדוק תשובות</em></span>
-            <span class="ri-chip">סדנה מעשית</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/networking-challenge.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-network"/></svg></span>
-            <span><b>אתגר הנטוורקינג</b><em>רשת קשרים ושיתופי פעולה</em></span>
-            <span class="ri-chip">זום · 4 מפגשים</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/glass-ceiling.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-arrowup"/></svg></span>
-            <span><b>מנפצים את תקרת הזכוכית</b><em>חסמים, יעדים, שיווק ותמחור</em></span>
-            <span class="ri-chip">4 מפגשים</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/success-principles.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-star"/></svg></span>
-            <span><b>עקרונות ההצלחה</b><em>גישה, ערכים, חזון ופעולה ראשונה</em></span>
-            <span class="ri-chip">הרצאה / סדנה</span>
-            <span class="ri-go">←</span>
-          </a>
-        </div>
+        <a class="wcard t5" href="workshops/ai-chatgpt-workshop.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-sparkle"/></svg></span></div>
+          <div class="body">
+            <h3>סבא ג'פטו לעסקים</h3>
+            <p>AI ו-ChatGPT כשיטת עבודה: מודל AI8</p>
+            <div class="meta"><span class="chip">זום · 2.5 שעות</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t2" href="workshops/claude-code-for-business.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-code"/></svg></span></div>
+          <div class="body">
+            <h3>קלוד קוד לעסקים</h3>
+            <p>עוזר AI שעובד על הקבצים שלכם</p>
+            <div class="meta"><span class="chip">זום · 2 מפגשים</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t5" href="workshops/ai-foundations.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-chip"/></svg></span></div>
+          <div class="body">
+            <h3>יסודות הבינה המלאכותית</h3>
+            <p>להבין, לשאול נכון ולבדוק תשובות</p>
+            <div class="meta"><span class="chip">סדנה מעשית</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t3" href="workshops/networking-challenge.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-network"/></svg></span></div>
+          <div class="body">
+            <h3>אתגר הנטוורקינג</h3>
+            <p>רשת קשרים ושיתופי פעולה</p>
+            <div class="meta"><span class="chip">זום · 4 מפגשים</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t4" href="workshops/glass-ceiling.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-arrowup"/></svg></span></div>
+          <div class="body">
+            <h3>מנפצים את תקרת הזכוכית</h3>
+            <p>חסמים, יעדים, שיווק ותמחור</p>
+            <div class="meta"><span class="chip">4 מפגשים</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t1" href="workshops/building-a-business.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-rocket"/></svg></span></div>
+          <div class="body">
+            <h3>בונים עסק</h3>
+            <p>ליווי עסקי קבוצתי לשלושה חודשים</p>
+            <div class="meta"><span class="chip">3 חודשים</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t3" href="workshops/success-principles.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-star"/></svg></span></div>
+          <div class="body">
+            <h3>עקרונות ההצלחה</h3>
+            <p>גישה, ערכים, חזון ופעולה ראשונה</p>
+            <div class="meta"><span class="chip">הרצאה / סדנה</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
+        </a>
       </div>
     </div>
 
     <div class="tabpanel" id="ws-orgs" role="tabpanel" aria-labelledby="tab-org">
       <span class="panel-h">סדנאות לחברות וארגונים</span>
-      <div class="panel-grid">
-        <a class="feature" href="workshops/org-only-i-choose-me.html">
-          <span class="f-label">סדנאות לחברות וארגונים</span>
-          <span class="f-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg></span>
-          <h3>רק אני בוחר עלי</h3>
-          <p>דלק, מוטיבציה וגישה מנצחת: גישה, מנהיגות דרך דוגמה אישית וכוח להתקדם.</p>
-          <span class="f-go">בקשת הצעת מחיר ←</span>
+      <div class="cards-grid">
+        <a class="wcard t3" href="workshops/org-only-i-choose-me.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg></span></div>
+          <div class="body">
+            <h3>רק אני בוחר עלי</h3>
+            <p>דלק, מוטיבציה וגישה מנצחת</p>
+            <div class="meta"><span class="chip">הרצאה / סדנה</span><span class="go">הצעת מחיר ←</span></div>
+          </div>
         </a>
-        <div class="rows-list">
-          <a class="rowitem" href="workshops/org-ai-made-easy.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-sparkle"/></svg></span>
-            <span><b>בינה מלאכותית בקלי קלות</b><em>שפה משותפת ושיטה אחת לעבודה עם AI</em></span>
-            <span class="ri-chip">מותאם לארגון</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/org-claude-code-magic.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-code"/></svg></span>
-            <span><b>לעשות קסמים עם קלוד קוד</b><em>עוזר AI לעובדים, בלי רקע בתכנות</em></span>
-            <span class="ri-chip">2 מפגשים</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/org-vision-work-plan.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-eye"/></svg></span>
-            <span><b>חזון ותוכנית עבודה</b><em>מחזון לתוכנית שכולם רותמים אליה</em></span>
-            <span class="ri-chip">מותאם לארגון</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/success-principles.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-star"/></svg></span>
-            <span><b>עקרונות ההצלחה</b><em>גישה, ערכים, חזון ופעולה ראשונה</em></span>
-            <span class="ri-chip">הרצאה / סדנה</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/entrepreneurs.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-bulb"/></svg></span>
-            <span><b>יזמות ושיווק ליזמים</b><em>חזון, שיווק ותמחור ליזמים</em></span>
-            <span class="ri-chip">קורסים ומכללות</span>
-            <span class="ri-go">←</span>
-          </a>
-        </div>
+        <a class="wcard t5" href="workshops/org-ai-made-easy.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-sparkle"/></svg></span></div>
+          <div class="body">
+            <h3>בינה מלאכותית בקלי קלות</h3>
+            <p>שפה משותפת ושיטה אחת לעבודה עם AI</p>
+            <div class="meta"><span class="chip">מותאם לארגון</span><span class="go">הצעת מחיר ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t2" href="workshops/org-claude-code-magic.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-code"/></svg></span></div>
+          <div class="body">
+            <h3>לעשות קסמים עם קלוד קוד</h3>
+            <p>עוזר AI לעובדים, בלי רקע בתכנות</p>
+            <div class="meta"><span class="chip">2 מפגשים</span><span class="go">הצעת מחיר ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t1" href="workshops/org-vision-work-plan.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-eye"/></svg></span></div>
+          <div class="body">
+            <h3>חזון ותוכנית עבודה</h3>
+            <p>מחזון לתוכנית שכולם רותמים אליה</p>
+            <div class="meta"><span class="chip">מותאם לארגון</span><span class="go">הצעת מחיר ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t3" href="workshops/success-principles.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-star"/></svg></span></div>
+          <div class="body">
+            <h3>עקרונות ההצלחה</h3>
+            <p>גישה, ערכים, חזון ופעולה ראשונה</p>
+            <div class="meta"><span class="chip">הרצאה / סדנה</span><span class="go">הצעת מחיר ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t4" href="workshops/entrepreneurs.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-bulb"/></svg></span></div>
+          <div class="body">
+            <h3>יזמות ושיווק ליזמים</h3>
+            <p>חזון, שיווק ותמחור ליזמים</p>
+            <div class="meta"><span class="chip">קורסים ומכללות</span><span class="go">הצעת מחיר ←</span></div>
+          </div>
+        </a>
       </div>
     </div>
 
     <div class="tabpanel" id="programs" role="tabpanel" aria-labelledby="tab-prog">
       <span class="panel-h">תהליכים קבוצתיים</span>
-      <div class="panel-grid">
-        <a class="feature" href="workshops/key-to-success.html">
-          <span class="f-label">תהליכים קבוצתיים</span>
-          <span class="f-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-key"/></svg></span>
-          <h3>המפתח להצלחה</h3>
-          <p>להיות המצליחן שבתוכי: 8 מפגשי זום בארבעה שלבים, מחזון אישי ועד שימור הרגלים.</p>
-          <span class="f-go">פרטים והרשמה ←</span>
+      <div class="cards-grid">
+        <a class="wcard t2" href="workshops/key-to-success.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-key"/></svg></span></div>
+          <div class="body">
+            <h3>המפתח להצלחה</h3>
+            <p>8 מפגשי זום בארבעה שלבים</p>
+            <div class="meta"><span class="chip">קבוצתי · זום</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
         </a>
-        <div class="rows-list">
-          <a class="rowitem" href="workshops/success-team.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg></span>
-            <span><b>נבחרת ההצלחה</b><em>העצמה והשגת יעדים בקבוצה</em></span>
-            <span class="ri-chip">קבוצתי</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/challenge-of-challenges.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-flag"/></svg></span>
-            <span><b>אתגר האתגרים</b><em>5 מפגשי זום לבעלי עסקים</em></span>
-            <span class="ri-chip">זום · 5 מפגשים</span>
-            <span class="ri-go">←</span>
-          </a>
-          <a class="rowitem" href="workshops/building-a-business.html">
-            <span class="ri-ic"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-rocket"/></svg></span>
-            <span><b>בונים עסק</b><em>ליווי עסקי קבוצתי לשלושה חודשים</em></span>
-            <span class="ri-chip">3 חודשים</span>
-            <span class="ri-go">←</span>
-          </a>
-        </div>
+        <a class="wcard t3" href="workshops/success-team.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg></span></div>
+          <div class="body">
+            <h3>נבחרת ההצלחה</h3>
+            <p>העצמה והשגת יעדים בקבוצה</p>
+            <div class="meta"><span class="chip">קבוצתי</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t4" href="workshops/challenge-of-challenges.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-flag"/></svg></span></div>
+          <div class="body">
+            <h3>אתגר האתגרים</h3>
+            <p>5 מפגשי זום לבעלי עסקים</p>
+            <div class="meta"><span class="chip">זום · 5 מפגשים</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
+        </a>
+        <a class="wcard t1" href="workshops/building-a-business.html">
+          <div class="banner"><span class="ring"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-rocket"/></svg></span></div>
+          <div class="body">
+            <h3>בונים עסק</h3>
+            <p>ליווי עסקי קבוצתי לשלושה חודשים</p>
+            <div class="meta"><span class="chip">3 חודשים</span><span class="go">פרטים והרשמה ←</span></div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -289,29 +317,29 @@
 <!-- ================= ליווי ================= -->
 <section id="coaching" class="band">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="sec-head center">
       <div class="eyebrow">ליווי אישי</div>
       <h2>ליווי לאורך זמן</h2>
       <p>תהליך אישי בשלוש דרכים, לפי מי שאתה ומה שאתה צריך.</p>
     </div>
-    <div class="cols3">
-      <article class="colitem" id="coach-personal">
-        <span class="ci-num">01</span>
+    <div class="coach-grid">
+      <article class="ccard" id="coach-personal" style="--ga:var(--t2a);--gb:var(--t2b)">
+        <span class="tile"><svg class="ic lg" aria-hidden="true" focusable="false"><use href="#i-heart"/></svg></span>
         <span class="tag">לפרטיים</span>
         <h3>אימון אישי</h3>
         <p>תהליך אימון אחד על אחד להבהרת כיוון, הצבת מטרות ויציאה לדרך. שיחת היכרות ללא עלות.</p>
         <a class="more" href="coaching/personal-coaching.html">לפרטים ←</a>
       </article>
-      <article class="colitem" id="coach-business">
-        <span class="ci-num">02</span>
+      <article class="ccard" id="coach-business" style="--ga:var(--t3a);--gb:var(--t3b)">
+        <span class="tile"><svg class="ic lg" aria-hidden="true" focusable="false"><use href="#i-briefcase"/></svg></span>
         <span class="tag">לבעלי עסקים</span>
         <h3>אימון עסקי</h3>
         <p>ליווי שוטף לבעל עסק: מחזון ויעדים, דרך תשתית עסקית, ועד הרחבת הפעילות.</p>
         <span class="pay">תשלום בהוראת קבע חודשית</span>
         <a class="more" href="coaching/business-coaching.html">לפרטים ←</a>
       </article>
-      <article class="colitem" id="coach-org">
-        <span class="ci-num">03</span>
+      <article class="ccard" id="coach-org" style="--ga:var(--t1a);--gb:var(--t1b)">
+        <span class="tile"><svg class="ic lg" aria-hidden="true" focusable="false"><use href="#i-users"/></svg></span>
         <span class="tag">לחברות וארגונים</span>
         <h3>ליווי ארגוני ומנהלים</h3>
         <p>ליווי מנהלים, צוותי מכירות והנהלות: ממנהל למנהיג, תוכנית הצלחה וליווי לאורך זמן.</p>
@@ -324,35 +352,36 @@
 <!-- ================= נתונים ================= -->
 <section class="numbers" aria-label="נתונים">
   <div class="wrap num-grid">
-    <div class="nb"><b><bdi dir="ltr">15+</bdi></b><span>שנות אימון והדרכה</span></div>
-    <div class="nb"><b><bdi dir="ltr">23,000+</bdi></b><span>עוקבים בלינקדאין</span></div>
-    <div class="nb"><b>16</b><span>סדנאות ותהליכים</span></div>
-    <div class="nb"><b>3</b><span>מסלולי ליווי</span></div>
+    <div class="num"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-award"/></svg><b><bdi dir="ltr">15+</bdi></b><span>שנות אימון והדרכה</span></div>
+    <div class="num"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg><b><bdi dir="ltr">23,000+</bdi></b><span>עוקבים בלינקדאין</span></div>
+    <div class="num"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-layers"/></svg><b>16</b><span>סדנאות ותהליכים</span></div>
+    <div class="num"><svg class="ic " aria-hidden="true" focusable="false"><use href="#i-heart"/></svg><b>3</b><span>מסלולי ליווי</span></div>
   </div>
 </section>
 
 <!-- ================= המלצות ================= -->
 <section id="testimonials">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="sec-head center">
       <div class="eyebrow">מה אומרים משתתפים</div>
       <h2>המלצות</h2>
     </div>
-    <div class="hq-wrap">
-      <figure class="hq-main">
+    <div class="hq-grid">
+      <figure class="hq t1">
+        <svg class="ic qi" aria-hidden="true" focusable="false"><use href="#i-quote"/></svg>
         <blockquote>ההרצאה הייתה מרתקת, פותחת מחשבה ומניעה לתזוזה. יצאתי עם דף מלא משפטים מקדמים ופעולות לביצוע.</blockquote>
-        <figcaption class="who-q"><strong>חלי לוי</strong><span>כתיבה שיווקית אפקטיבית</span></figcaption>
+        <figcaption class="who-q"><span class="av" aria-hidden="true">ח</span><div><strong>חלי לוי</strong><span>כתיבה שיווקית אפקטיבית</span></div></figcaption>
       </figure>
-      <div class="hq-side">
-        <figure>
-          <blockquote>קובי כרגיל נותן ערך רב, מעביר מסרים ברהיטות. שווה לשמוע תמיד.</blockquote>
-          <figcaption class="who-q"><strong>ראובן ליבנה</strong><span>בינה מלאכותית AI</span></figcaption>
-        </figure>
-        <figure>
-          <blockquote>הרצאה עניינית, ממוקדת, מקצועית ופרקטית. ממליצה מאוד.</blockquote>
-          <figcaption class="who-q"><strong>מיכל שטרית</strong><span>MS Photography</span></figcaption>
-        </figure>
-      </div>
+      <figure class="hq t3">
+        <svg class="ic qi" aria-hidden="true" focusable="false"><use href="#i-quote"/></svg>
+        <blockquote>קובי כרגיל נותן ערך רב, מעביר מסרים ברהיטות. שווה לשמוע תמיד.</blockquote>
+        <figcaption class="who-q"><span class="av" aria-hidden="true">ר</span><div><strong>ראובן ליבנה</strong><span>בינה מלאכותית AI</span></div></figcaption>
+      </figure>
+      <figure class="hq t2">
+        <svg class="ic qi" aria-hidden="true" focusable="false"><use href="#i-quote"/></svg>
+        <blockquote>הרצאה עניינית, ממוקדת, מקצועית ופרקטית. ממליצה מאוד.</blockquote>
+        <figcaption class="who-q"><span class="av" aria-hidden="true">מ</span><div><strong>מיכל שטרית</strong><span>MS Photography</span></div></figcaption>
+      </figure>
     </div>
     <div class="center-cta"><a class="btn btn-ghost" href="testimonials.html">לכל ההמלצות</a></div>
   </div>
@@ -361,10 +390,12 @@
 <!-- ================= עליי ================= -->
 <section id="about" class="band">
   <div class="wrap about">
-    <div class="ab-photo"><img src="images/koby.jpg" alt="קובי חיון" width="400" height="500" loading="lazy"></div>
+    <img src="images/koby.jpg" alt="קובי חיון" width="400" height="400" loading="lazy">
     <div>
-      <div class="eyebrow">נעים להכיר</div>
-      <h2>קצת עליי</h2>
+      <div class="sec-head" style="margin-bottom:16px">
+        <div class="eyebrow">נעים להכיר</div>
+        <h2>קצת עליי</h2>
+      </div>
       <p>אני עוסק באימון אנשים, בעלי עסקים וארגונים כבר יותר מ-15 שנה. למדתי שאין שני תהליכים זהים, ולכן אני לא עובד לפי תסריט: אני מקשיב, שואל ובונה את הדרך יחד איתכם. מאמין שכולם יכולים, ושמעטים מוכנים לבחור.</p>
       <a class="btn btn-ghost" href="about.html">להכיר אותי</a>
     </div>
