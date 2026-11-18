@@ -179,3 +179,16 @@
 .doc ul.dl { margin-top: 8px; display: grid; gap: 8px; }
 .doc ul.dl li { position: relative; padding-inline-start: 20px; }
 .doc ul.dl li::before { content: ""; position: absolute; inset-inline-start: 0; top: .7em; width: 7px; height: 7px; border-radius: 50%; background: var(--sun); }
+
+/* ===== סרטונים משובצים ===== */
+.vsec { padding-bottom: 8px; }
+.vgrid { display: grid; gap: 24px; margin-top: 26px; }
+.vgrid.two { grid-template-columns: repeat(2, 1fr); }
+.vid { margin: 0; min-width: 0; }
+.vid video { width: 100%; display: block; aspect-ratio: 16 / 9; object-fit: contain; background: #0D2C4D; border-radius: 16px; box-shadow: 0 12px 32px rgba(13,44,77,.18); }
+.vid.portrait { max-width: 320px; margin-inline: auto; }
+.vid.portrait video { aspect-ratio: 478 / 850; }
+.vgrid:not(.two) .vid:not(.portrait) { max-width: 900px; }
+.vid figcaption { margin-top: 12px; font-size: .95rem; color: var(--muted); }
+.vid figcaption strong { display: block; color: var(--navy); font-family: var(--head); font-size: 1.05rem; }
+@media (max-width: 760px) { .vgrid.two { grid-template-columns: 1fr; } }
