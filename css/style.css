@@ -57,7 +57,7 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.2; color: var(--navy-deep)
 .site-header::before { inset: 0; background: url("../images/header-glass.svg") no-repeat right center / cover; transform-origin: 90% 40%; animation: glass-crack .9s .1s cubic-bezier(.2, .8, .2, 1) backwards; }
 .site-header::after { top: 100%; left: 0; right: 0; height: 34px; background: url("../images/header-shards.svg") no-repeat right top / cover; animation: glass-fall 1.1s .45s ease-out backwards; }
 .site-header .bar { position: relative; z-index: 1; }
-@keyframes glass-crack { from { opacity: 0; transform: scale(1.12); } }
+@keyframes glass-crack { from { opacity: 0; } }
 @keyframes glass-fall { from { opacity: 0; transform: translateY(-14px) rotate(-1.5deg); } }
 @media (max-width: 900px) { .site-header::after { height: 22px; } .site-header::before { background-image: url("../images/header-glass-m.svg"); transform-origin: 40% 50%; } }
 @media (prefers-reduced-motion: reduce) { .site-header::before, .site-header::after { animation: none; } }
@@ -84,7 +84,7 @@ h1, h2, h3 { font-family: var(--head); line-height: 1.2; color: var(--navy-deep)
   padding: 8px; opacity: 0; visibility: hidden; transform: translateY(6px);
   transition: opacity .18s, transform .18s, visibility .18s;
 }
-.has-menu:hover > .menu, .has-menu.open > .menu, .has-menu:focus-within > .menu {
+.has-menu.open > .menu {
   opacity: 1; visibility: visible; transform: none;
 }
 .menu .label {
@@ -196,7 +196,6 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .nav > ul { flex-direction: column; align-items: stretch; gap: 0; }
   .nav a.top, .nav button.top { width: 100%; justify-content: space-between; padding: 14px 8px; font-size: 1.1rem; border-bottom: 1px solid var(--line); border-radius: 0; }
   .menu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; padding: 0 12px; display: none; min-width: 0; }
-  .has-menu:hover > .menu { display: none; }
   .has-menu.open > .menu { display: block; }
   .nav .btn { margin-top: 18px; text-align: center; }
   .hero-grid, .two, .about { grid-template-columns: 1fr; }

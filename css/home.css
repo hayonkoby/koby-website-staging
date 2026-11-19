@@ -120,3 +120,20 @@
   .tabs { gap: 6px; }
   .tab { padding: 8px 14px; font-size: .9rem; }
 }
+
+/* בחירה לפי צורך */
+.needs { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin: 0 0 34px; }
+.need { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+.need h3 { font-size: 1.05rem; margin-bottom: 8px; color: var(--navy-deep); }
+.need ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.need a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
+.need a:hover { color: var(--sun-deep); }
+.pathcoach { display: flex; flex-direction: column; gap: 2px; background: var(--paper); border: 1px dashed var(--navy); border-radius: 14px; padding: 12px 18px; margin: 0 0 18px; color: var(--ink); }
+.pathcoach b { color: var(--navy-deep); }
+.pathcoach span { font-size: .95rem; }
+.pathcoach:hover { background: #fff; }
+
+/* עוגנים לא מוסתרים מתחת לכותרת הנעוצה; הפאנל פותח עם הלשוניות והכותרת בנראות */
+section[id] { scroll-margin-top: 90px; }
+.tabpanel { scroll-margin-top: 250px; }
+@media (max-width: 700px) { .tabpanel { scroll-margin-top: 310px; } }
